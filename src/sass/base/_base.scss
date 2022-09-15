@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing*/
+    box-sizing: inherit;
+}
+
+html{
+    /*1rem = root font size*/
+    /*1rem = 10px*/
+    /*default root font size is 16px*/
+    /* font-size: 10px; */
+    /*10 / 16 = 62.5%*/
+    font-size: 62.5%;
+}
+
+body {
+    /* https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900 */
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: $color-grey-dark;
+    //padding: 3rem;
+
+    box-sizing: border-box;
+}

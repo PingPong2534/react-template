@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing*/
+  box-sizing: inherit; }
+
+html {
+  /*1rem = root font size*/
+  /*1rem = 10px*/
+  /*default root font size is 16px*/
+  /* font-size: 10px; */
+  /*10 / 16 = 62.5%*/
+  font-size: 62.5%; }
+
+body {
+  /* https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900 */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #777;
+  box-sizing: border-box; }
+
+div .portfolio .header {
+  /* 95vh = 95% * screen view height */
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/home-background.jpg);
+  /*https://developer.mozilla.org/en-US/docs/Web/CSS/background-size*/
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  /*https://bennettfeely.com/clippy/*/
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  div .portfolio .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  div .portfolio .header__logo {
+    height: 3.5rem; }
+  div .portfolio .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
